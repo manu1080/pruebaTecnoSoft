@@ -1,0 +1,126 @@
+<div ng-controller="View1Ctrl">
+    <md-toolbar class="md-hue-2" style="background:#070944">
+        <div class="md-toolbar-tools">
+            <h3>TecnoEmpresas</h3>
+        </div>
+    </md-toolbar>
+
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="100" layout="column">
+            <md-card md-theme-watch>
+                <md-container>
+                </md-container>
+                <md-card-title>
+                    <md-card-title-text>
+                        <h3>Empresas</h3>
+                    </md-card-title-text>
+                    <div class="input-group">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" id="search" ng-model="busqueda" ng-change="filtrarTabla()" placeholder="Buscar Empresa">
+                            <span src="img/ico_search.png" class="glyphicon glyphicon-search form-control-feedback"></span>
+                        </div>
+                    </div>
+                </md-card-title>
+                <md-table-container>
+                    <table md-table md-progress="promise">
+                        <thead md-head md-order="query.order">
+                            <tr md-row>
+                                <th md-column>Nombre de Empresa</th>
+                                <th md-column>Ubicación</th>
+                            </tr>
+                        </thead>
+                        <tbody md-body>
+                            <tr md-row ng-click="mostrarDetalles(compaine)" md-select-id="name" md-auto-select ng-repeat="compaine in compaines">
+                                <td md-cell ng-if="! (compaine === selectCompanie)">{{compaine.name}}</td>
+                                <td md-cell ng-if="! (compaine === selectCompanie)">{{compaine.offices[0].address}}</td>
+                                <td md-cell ng-if="detalles && compaine === selectCompanie" flex="2">
+                                    <md-card-content>
+                                        <md-card-title layout="row">
+                                            <md-card-title-text layout-align="start start">
+                                                <span>{{compaine.name}}</span>
+                                            </md-card-title-text>
+                                            <h2 flex md-truncate></h2>
+                                            <h2 flex md-truncate></h2>
+                                            <h2 flex md-truncate></h2>
+                                            <h2 flex md-truncate></h2>
+                                            <h2 flex md-truncate></h2>
+                                            <h2 flex md-truncate></h2>
+                                            <md-card-title-text layout-align="end start">
+                                                <span>{{compaine.offices[0].address}}</span>
+                                            </md-card-title-text>
+                                        </md-card-title>
+
+                                        <md-card-title layout="column">
+                                            <md-card-title-text flex>
+                                                <h4 style="color:#070944" layout="row" flex>Datos de la Empresas
+                                                    <span>
+                                                        <img src="img/ico_company.png" class="img-responsive">
+                                                    </span>
+                                                </h4>
+                                            </md-card-title-text>
+                                            <md-card-title-text layout="row">
+                                                <label>Nombre: </label>
+                                                <span>{{compaine.name}}</span>
+                                                <md-divider md-inset></md-divider>
+                                                <label>Telefono: </label>
+                                                <span>{{compaine.offices[0].phone}}</span>
+                                                <md-divider md-inset></md-divider>
+                                                <label>Pais: </label>
+                                                <span>{{compaine.offices[0].country}}</span>
+                                                <md-divider md-inset></md-divider>
+                                                <label>Direccion: </label>
+                                                <span>{{compaine.offices[0].address}}</span>
+                                            </md-card-title-text>
+                                        </md-card-title>
+                                        <md-card-title layout="column">
+                                            <md-card-title-text flex>
+                                                <h4 style="color:#070944" layout="row" flex>Productos
+                                                    <span>
+                                                        <img src="img/ico_products.png" class="img-responsive">
+                                                    </span>
+                                                </h4>
+                                            </md-card-title-text>
+                                            <md-card-title-text ng-repeat="producto in productos">
+                                                <div layout="row">
+                                                    <label>Porducto {{producto.id}}: </label>
+                                                    <span>{{producto.name}}</span>
+                                                </div>
+                                            </md-card-title-text>
+                                        </md-card-title>
+                                        <md-card-title layout="column">
+                                            <md-card-title-text flex>
+                                                <h4 style="color:#070944" layout="row" flex>Clientes
+                                                    <span>
+                                                        <img src="img/ico_clients.png" class="img-responsive">
+                                                    </span>
+                                                </h4>
+                                            </md-card-title-text>
+                                            <md-card-title-text layout="row" ng-repeat="cliente in clientes">
+                                                <label>Nombre: </label>
+                                                <span>{{cliente.name}}</span>
+                                                <md-divider md-inset></md-divider>
+                                                <label>Telefono: </label>
+                                                <span>{{cliente.offices[0].phone}}</span>
+                                                <md-divider md-inset></md-divider>
+                                                <label>Pais: </label>
+                                                <span>{{cliente.offices[0].country}}</span>
+                                                <md-divider md-inset></md-divider>
+                                                <label>Direccion: </label>
+                                                <span>{{cliente.offices[0].address}}</span>
+                                            </md-card-title-text>
+                                        </md-card-title>
+                                    </md-card-content>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </md-table-container>
+
+            </md-card>
+
+        </div>
+
+    </md-content>
+
+</div>

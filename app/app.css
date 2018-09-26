@@ -1,0 +1,14 @@
+/* app css stylesheet */
+
+.glyphicon-search{
+  background: url(img/ico_search.png);
+  background-size: cover; 
+}
+
+#search{
+  border-radius:60px;
+}
+.img-responsive{
+  height: 4%;
+  width: 4%;
+}

@@ -1,0 +1,45 @@
+{
+ "result": {
+   "companies": [
+     {
+       "id": "0001",
+       "name": "First Company",
+       "offices": [
+         {
+           "country": "Argentina",
+           "address": "Av. Chiclana 3345, CABA",
+           "phone": "+54 (9) 486-2136",
+           "main": true
+         }
+       ],
+       "created": "2014-01-01T23:28:56.782Z"
+     },
+     {
+       "id": "0002",
+       "name": "Second Company",
+       "offices": [
+         {
+           "country": "Argentina",
+           "address": "Av. Chiclana 3345, CABA",
+           "phone": "+54 (9) 852-5555",
+           "main": true
+         }
+       ],
+       "created": "2013-05-03T23:28:56.782Z"
+     },
+     {
+       "id": "0003",
+       "name": "Third Company",
+       "offices": [
+         {
+           "country": "Argentina",
+           "address": "Av. Chiclana 3345, CABA",
+           "phone": "+54 (9) 231-3333",
+           "main": true
+         }
+       ],
+       "created": "2012-02-04T23:28:56.782Z"
+     }
+   ]
+ }
+}

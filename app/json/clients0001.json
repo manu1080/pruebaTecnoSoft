@@ -1,0 +1,48 @@
+{
+ "result": {
+   "clients": [
+     {
+       "id": "0001",
+       "id_company": "0001",
+       "name": "First Client Company 1",
+       "offices": [
+         {
+           "country": "Chile",
+           "address": "Av. Santiago 2010, Santiago",
+           "phone": "+56 (9) 486-2136",
+           "main": true
+         }
+       ],
+       "created": "2005-01-01T23:28:56.782Z"
+     },
+     {
+       "id": "0002",
+       "id_company": "0001",
+       "name": "Second Client Company 1",
+       "offices": [
+         {
+           "country": "Panamá",
+           "address": "Av. Panamá 1003, Panamá",
+           "phone": "+507 (9) 852-5555",
+           "main": true
+         }
+       ],
+       "created": "2010-05-03T23:28:56.782Z"
+     },
+     {
+       "id": "0003",
+       "id_company": "0001",
+       "name": "Third Client Company 1",
+       "offices": [
+         {
+           "country": "Colombia",
+           "address": "Av. Bogotá 1430, Bogotá",
+           "phone": "+57 (9) 231-3333",
+           "main": true
+         }
+       ],
+       "created": "2014-02-04T23:28:56.782Z"
+     }
+   ]
+ }
+}

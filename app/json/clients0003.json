@@ -1,0 +1,20 @@
+{
+ "result": {
+   "clients": [
+     {
+       "id": "0001",
+       "id_company": "0003",
+       "name": "First Client Company 3",
+       "offices": [
+         {
+           "country": "Chile",
+           "address": "Av. Santiago 2010, Santiago",
+           "phone": "+56 (9) 486-2136",
+           "main": true
+         }
+       ],
+       "created": "2005-01-01T23:28:56.782Z"
+     }
+   ]
+ }
+}

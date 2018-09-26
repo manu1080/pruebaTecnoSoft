@@ -1,0 +1,36 @@
+{
+ "result": {
+   "productos": [
+     {
+       "id": "0001",
+       "id_company": "0002",
+       "name": "Product 1 Company 2"
+     },
+     {
+       "id": "0002",
+       "id_company": "0002",
+       "name": "Product 2 Company 2"
+     },
+     {
+       "id": "0003",
+       "id_company": "0002",
+       "name": "Product 3 Company 2"
+     },
+     {
+       "id": "0004",
+       "id_company": "0002",
+       "name": "Product 4 Company 2"
+     },
+     {
+       "id": "0005",
+       "id_company": "0002",
+       "name": "Product 5 Company 2"
+     },
+     {
+       "id": "0006",
+       "id_company": "0002",
+       "name": "Product 6 Company 2"
+     }
+   ]
+ }
+}
